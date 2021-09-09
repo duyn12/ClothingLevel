@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng-Clothing level</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./images/logo4.png"/>
+</head>
+<body>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        .thanks {
+            margin-bottom: 50px;
+        }
+    </style>
+    <menu>
+        <div class="container grid">
+            <a href="index.html" id="logo" class="left logo"><img src="images/logo4.png" alt="logo"></a>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <nav class="right">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#services">Collections</a></li>
+                    <li><a href="#portfolio">Áo quần, phụ kiện</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                    <!-- <li><a href=""><i class="fas fa-shopping-cart"  ></i></a></li> -->
+                </ul>
+
+                <label for="nav-mobile-input" class="nav-btn">
+                    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                </label>
+
+                <input type="checkbox" hidden id="nav-mobile-input" class="nav-btn-input">
+
+                <label for="nav-mobile-input" class="nav-label"></label>
+            </nav>
+            
+        </div>
+        
+    </menu>
+    <section class="contact">
+        <h2 class="thanks">Cảm ơn quý khách hàng đã ghé mua Clothing level!<br> Hẹn gặp lại.</h2>
+        <div class="container grid">
+            <div class="left">
+                <h3>Giỏ hàng</h3>
+                <hr>
+                <div class="cart-item">
+                    <a for="nav-mobile-input"a class="delete"><i class="fas fa-trash-alt"></i></a>
+                    <img src="images/quans.jpg" alt="">
+                    <div class="content">
+                        <h3>Zipper Cargo Short</h3>
+                        <a>450,000 VND</a>
+                        <small>Số lượng 1</small>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <a class="delete"><i class="fas fa-trash-alt"></i></a>
+                    <img src="images/ao2.jpg" alt="">
+                    <div class="content">
+                        <h3>MDR Polo Shirt</h3>
+                        <a>380,000 VND</a>
+                        <small>Số lượng 1</small>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <a class="delete"><i class="fas fa-trash-alt"></i></a>
+                    <img src="images/jacket.jpg" alt="">
+                    <div class="content">
+                        <h3>Varsity Jacket</h3>
+                        <a>680,000 VND</a>
+                        <small>Số lượng 1</small>
+                    </div>
+                </div>
+                <hr>
+                <h4>Tổng cộng: <small>1510.000 VNĐ</small></h4>
+            </div>
+
+            <div class="right">
+                <form>
+                    <p><small>Bạn chưa có tài khoản?<a href="">Đăng nhập</a></small></p>
+                    <input type="text" id="name" placeholder="Họ và Tên:">
+                    <input type="email" id="email" placeholder="Email của bạn">
+                    <input type="text" id="companyName" placeholder="Địa chỉ:(số nhà, tên đường, phường/xã, /quận/huyện)">
+                    <textarea name="tel"  cols="30" rows="1" placeholder="Số điện thoại:"></textarea>
+                    <input type="text" id="check" placeholder="Mã giảm giá">
+                    <button class="btn">Thanh toán</button>
+                   
+                </form>
+                
+            </div>
+            
+        </div>
+        <div class="text-center">
+            <small>All contents of this website are the property of Clothing Level. No part of this site, including all text and images,
+               <br> may be reproduced in any form without the prior written consent of Clothing Level.</small>
+               <small><br>© 2020 Clothing Level. All Rights Reserved.</small>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/logo4.png"/>
+    <title>Shop All-Clothing Level</title>
+</head>
+<body>
+    <menu>
+        <div class="container grid">
+            <a href="index.html" id="logo" class="left logo"><img src="images/logo4.png" alt="logo"></a>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <nav class="right">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="index.html">Collections</a></li>
+                    <li><a href="#portfolio">Áo quần, phụ kiện</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                    <!-- <li><a href=""><i class="fas fa-shopping-cart"  ></i></a></li> -->
+                </ul>
+
+                <label for="nav-mobile-input" class="nav-btn">
+                    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                </label>
+
+                <input type="checkbox" hidden id="nav-mobile-input" class="nav-btn-input">
+
+                <label for="nav-mobile-input" class="nav-label"></label>
+
+                <div class="settings-menu">
+                    <h2>Giỏ hàng</h2>
+                    <label for="nav-mobile-input" class="nav-close">
+                        <i class="fas fa-times"></i>
+                    </label>
+                    <hr>
+                    <div class="cart-item">
+                        <a for="nav-mobile-input"a class="delete"><i class="fas fa-trash-alt"></i></a>
+                        <img src="images/quans.jpg" alt="">
+                        <div class="content">
+                            <h3>Zipper Cargo Short</h3>
+                            <a href="">450,000 VND</a>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <a class="delete"><i class="fas fa-trash-alt"></i></a>
+                        <img src="images/ao2.jpg" alt="">
+                        <div class="content">
+                            <h3>MDR Polo Shirt</h3>
+                            <a href="">380,000 VND</a>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <a class="delete"><i class="fas fa-trash-alt"></i></a>
+                        <img src="images/jacket.jpg" alt="">
+                        <div class="content">
+                            <h3>Varsity Jacket</h3>
+                            <a href="">680,000 VND</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="checkpay.html" class="btn-content">Mua hàng</a>
+                </div>
+            </nav>
+        </div>
+        
+        <label for="nav-mobile-input" class="nav-btn">
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        </label>
+
+        <input type="checkbox" hidden id="nav-mobile-input" class="nav-btn-input">
+
+        <label for="nav-mobile-input" class="nav-label"></label>
+
+
+    </menu>
+    <div class="clr"></div>
+    <!-- <div id="hero">
+        <div class="container grid">
+            <div class="left" data-aos="fade-right">
+                <H1>DESIGNS YOUR MIND, YOUR LEVEL!</H1>
+                <P>𝚆𝚎 𝚊𝚛𝚎 𝚝𝚑𝚎 𝚂𝚝𝚛𝚎𝚎𝚝 𝙼𝚘𝚟𝚎𝚖𝚎𝚗𝚝</P>
+                <button><a href="login.html">Đăng nhập</a></button>
+            </div>
+            <div class="right" data-aos="fade-left" data-aos-delay="500">
+                <img src="images/anno.png" alt="Reddi Flryd">
+            </div>
+        </div>
+    </div> -->
+</header>
+<div class="clr"></div>
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="textCaption">
+            <h2>Tất cả sản phẩm</h2>
+            <p>
+                ĐĂNG KÝ MEMBERSHIP → MIỄN PHÍ VẬN CHUYỂN
+            </p>
+        </div>
+
+        <div id="btnWrapper">
+            <button class="btn active" onclick="filterSelection('all')">All</button>
+            <button class="btn" onclick="filterSelection('webdesign')">Quần, áo</button>
+            <button class="btn" onclick="filterSelection('webdev')">Phụ kiện</button>
+            <button class="btn" onclick="filterSelection('app')">Jacket, hoodie</button>
+            <button class="btn" onclick="filterSelection('seo')">Sell off</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="boxes grid">
+            <div class="project project1 webdesign">
+                <img src="images/quan.jpg" alt="Mountains">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(1)">
+                        𝐂𝐚𝐫𝐠𝐨 𝐏𝐚𝐧𝐭𝐬 - 𝐖𝐚𝐬𝐡 𝐀𝐜𝐢𝐝 <p>720.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project2 webdesign">
+                <img src="images/quans.jpg" alt="Lights">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(2)">
+                        𝐁𝐮𝐭𝐭𝐨𝐧 𝐂𝐚𝐫𝐠𝐨 𝐏𝐚𝐧𝐭 <p>450.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project3 webdesign">
+                    <img src="images/ao2.jpg" alt="Nature">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(3)">
+                        Mouvement De Rue - Polo <p>380.000₫</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project project4 webdev">
+                <img src="images/vi1.png" alt="Car">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(4)">
+                        Leather Cardholder w buckle detail <p>170.000VNĐ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project5 webdev">
+                <img src="images/tui1.png" alt="Car">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(5)">
+                        Mini Leather Bag <p>420.000₫</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project project6 app">
+                <img src="images/jacket.jpg" alt="Car">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(6)">
+                        𝐕𝐚𝐫𝐬𝐢𝐭𝐲 𝐉𝐚𝐜𝐤𝐞𝐭 <p>680.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project7 app">
+                <img src="images/hoodie.jpg" alt="Car">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(7)">
+                        Suede Hoodie - Cream Pearl <p>580.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project8 seo">
+                <img src="images/sale1.jpg" alt="Car">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(8)">
+                        𝐋𝐄𝐀𝐓𝐇𝐄𝐑 𝐂𝐎𝐀𝐂𝐇 𝐉𝐀𝐂𝐊𝐄𝐓 ™ <p>750.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project6 app">
+                <img src="images/camo-jacket.jpg" alt="Car">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(9)">
+                        Camo Jacket - Black<p>580.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project6 app">
+                <img src="images/leather-coach-jacket.jpg" alt="Car">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(10)">
+                        Leather Coach Jacket<p>750.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project6 app">
+                <img src="images/hoodie1.jpg" alt="Car">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(11)">
+                        MDR - Vintage <p>380.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project6 app">
+                <img src="images/jacket1.jpg" alt="Car">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(12)">
+                        MDR - Beige <p>380.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project3 webdesign">
+                <img src="images/mdr-tee.jpg" alt="Nature">
+                <div class="overlay">
+                <div class="text">
+                    <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(13)">
+                    Mouvement De Rue - tee <p>380.000₫</p>
+                    <label for="size">size</label>
+                </div>
+                </div>
+            </div>
+            <div class="project project2 webdesign">
+                <img src="images/quans1.jpg" alt="Lights">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(14)">
+                        𝐁𝐮𝐭𝐭𝐨𝐧 𝐂𝐚𝐫𝐠𝐨 𝐏𝐚𝐧𝐭 <p>450.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project4 webdev">
+                <img src="images/mu1.jpg" alt="Car">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(15)">
+                        Mini Shoulder Bag Canvas <p>250.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project4 webdev">
+                <img src="images/cap1.jpg" alt="Car">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(16)">
+                        Mini Shoulder Bag Canvas <p>380.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project2 webdesign">
+                <img src="images/cuban-shirt1.jpg" alt="Lights">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(17)">
+                        𝐁𝐮𝐭𝐭𝐨𝐧 𝐂𝐚𝐫𝐠𝐨 𝐏𝐚𝐧𝐭 <p>450.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project3 webdesign">
+                    <img src="images/cuban-shirt2.jpg" alt="Nature">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(18)">
+                        Mouvement De Rue - Polo <p>380.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project2 webdesign">
+                <img src="images/cuban-shirt-3.jpg" alt="Lights">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(19)">
+                        𝐁𝐮𝐭𝐭𝐨𝐧 𝐂𝐚𝐫𝐠𝐨 𝐏𝐚𝐧𝐭 <p>450.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project3 webdesign">
+                    <img src="images/cuban-shirt-5.jpg" alt="Nature">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(20)">
+                        Mouvement De Rue - Polo <p>650.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project2 webdesign">
+                <img src="images/button-cargo-1.jpg" alt="Lights">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(21)">
+                        𝐁𝐮𝐭𝐭𝐨𝐧 𝐂𝐚𝐫𝐠𝐨 𝐏𝐚𝐧𝐭 <p>650.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project3 webdesign">
+                    <img src="images/button-cargo-2.jpg" alt="Nature">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(22)">
+                        Mouvement De Rue - Polo <p>650.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project2 webdesign">
+                <img src="images/snap-cargo-3.jpg" alt="Lights">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(23)">
+                        𝐁𝐮𝐭𝐭𝐨𝐧 𝐂𝐚𝐫𝐠𝐨 𝐏𝐚𝐧𝐭 <p>650.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project3 webdesign">
+                    <img src="images/snap-cargo-4.jpg" alt="Nature">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(24)">
+                        Mouvement De Rue - Polo <p>650.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project2 webdesign">
+                <img src="images/zipper-cargo-5.jpg" alt="Lights">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(25)">
+                        Zipper Cargo Pant - Dark Mocha <p>650.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project3 webdesign">
+                    <img src="images/mdr-polo-1.jpg" alt="Nature">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(26)">
+                        Mouvement De Rue - Polo <p>380.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project2 webdesign">
+                <img src="images/mdr-polo-3.jpg" alt="Lights">
+                  <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(27)">
+                        𝐁𝐮𝐭𝐭𝐨𝐧 𝐂𝐚𝐫𝐠𝐨 𝐏𝐚𝐧𝐭 <p>450.000₫</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project project3 webdesign">
+                    <img src="images/ao2.jpg" alt="Nature">
+                    <div class="overlay">
+                    <div class="text">
+                        <img src="images/zoom.png" alt="zoom" class="zoom" onclick="openModal();currentSlide(3)">
+                        Mouvement De Rue - Polo <p>380.000₫</p>
+                    </div>
+                </div>
+            </div>
+            
+        
+            
+            
+        <!-- END GRID -->
+        </div>
+
+        <div class="row">
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+
+                <button class="btncontact">Thêm vào giỏ</button>
+                <div class="mySlides">
+                  <img src="images/quan2.jpg">
+                </div>
+                <div class="mySlides">
+                  <img src="images/quans.jpg">
+                </div>
+                <div class="mySlides">
+                  <img src="images/ao22.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/vi2.png">
+                </div>
+                <div class="mySlides">
+                    <img src="images/tui2.png">
+                </div>
+                <div class="mySlides">
+                    <img src="images/jacket.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/hoodie.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/sale1.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/camo-jacket.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/leather-coach-jacket.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/hoodie2.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/jacket2.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/mdr-tee.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/quans1.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/mu2.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/cap2.jpg">
+                </div>
+                <!-- -- -->
+                <div class="mySlides">
+                    <img src="images/cuban-shirt1.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/cuban-shirt2.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/cuban-shirt-33.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/cuban-shirt-55.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/button-cargo-11.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/button-cargo-22.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/Mocha2_33.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/snap-cargo-44.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/zipper-cargo-55.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/mdr-polo-2.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/mdr-polo-3.jpg">
+                </div>
+                <div class="mySlides">
+                    <img src="images/ao22.jpg">
+                </div>
+                
+                <!--  -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                  <p id="caption"></p>
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</section>
+<section class="workWithMe" id="contact">
+    <div class="container grid">
+        <div class="left">
+            <h3>/ Frame:work/</h3>
+            <p>Store Sai Gon: 000/7 Dao Duy Anh, Phu Nhuan. <br>Store Đà Nẵng: 000 Phan Chau Trinh, Hai Chau.</p>
+        </div>
+        <div class="right"><a href="index.html">
+            <button>Back to shop</button>
+        </a>
+        </div>
+    </div>
+</section>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
